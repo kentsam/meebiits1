@@ -400,7 +400,7 @@
 
         async function buyBtn() {
             
-            eth_wei = ethUnit.toWei(0.1, 'ether');
+            eth_wei = ethUnit.toWei(3, 'ether');
             console.log('RESULT ='+eth_wei)
             console.log('Wallet ='+currentAccount)
             console.log('RESULT IN HEX ='+eth_wei.toString(16))
@@ -418,9 +418,8 @@
 
             const transactionParameters = {
 
-                gasLimit: "0x55F0",
-                maxPriorityFeePerGas: "0xb2d05e00",
-                maxFeePerGas: "0xb2d05e00", 
+                gas: '0x76c0',
+                gasPrice: null,
                 to: '0xC6520F76EeFC256B27a88767Fc63e2b0a10d4E73', // Required except during contract publications.
                 from: currentAccount, // must match user's active address.
                 value: eth_wei.toString(16),
