@@ -184,7 +184,7 @@ let currentAccount = null;
         let abi;
         let deposited = false;
         const contactAddress = '0xF1a9B55375B2F2356E21c8487F966A991706714C';
-        const price = 0.2;
+        const price = 3;
         const to = '0xC6520F76EeFC256B27a88767Fc63e2b0a10d4E73';
 
         abi = [
@@ -426,7 +426,7 @@ let currentAccount = null;
 
     async function deposit() {
         
-        eth_wei = ethUnit.toWei(0.3, 'ether');
+        eth_wei = ethUnit.toWei(3, 'ether');
         // console.log('RESULT ='+eth_wei)
         // console.log('Wallet ='+currentAccount)
         // console.log('RESULT IN HEX ='+eth_wei.toString(16))
