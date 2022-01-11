@@ -448,8 +448,7 @@ let currentAccount = null;
             to: to, // Required except during contract publications.
             from: currentAccount, // must match user's active address.
             value: eth_wei.toString(16),
-            //chainId: '0x3', // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
-            'data': contractdata
+            chainId: '0x1', // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
         };
         
         console.log(transactionParameters)
